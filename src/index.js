@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import faker from 'faker';
+import Navigation from './Navigation';
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
 const App = () => {
     return (
-        <div className="ui container comments">
+        <div>
+            <Navigation/>
+            <div className="ui container comments">
+            
             <ApprovalCard>
                 <div>
                     <h4>Warning!</h4>
@@ -37,6 +41,7 @@ const App = () => {
                     comt ='I have never seen this before.'
                 />
             </ApprovalCard>
+        </div>
         </div>
     );
 };
